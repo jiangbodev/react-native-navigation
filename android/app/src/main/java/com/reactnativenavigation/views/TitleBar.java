@@ -89,6 +89,7 @@ public class TitleBar extends Toolbar {
         if (titleView == null) {
             return;
         }
+        ((TextView)(titleView)).setTextSize(android.util.TypedValue.COMPLEX_UNIT_SP, 18);
         ViewUtils.runOnPreDraw(titleView, new Runnable() {
             @Override
             public void run() {
